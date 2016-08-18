@@ -1,0 +1,85 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element {
+  width: 200px;
+  height: 400px;
+  background: red;
+
+  + .element {
+    background: blue;
+
+    + .element {
+      background: green;
+
+      + .element {
+        background: yellow;
+      }
+    }
+  }
+}
+
+
+.tutobot {
+  $color: orange;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: solid 2px $color;
+  background: $color;
+  padding: 30px;
+  transition: 0.5s ease;
+  z-index: 9999999999;
+
+  $arrowSize: 10px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: solid $arrowSize $color;
+    top: calc(50% - $arrowSize);
+  }
+
+  &.top-left, &.bottom-left {
+    transform: translate(-$arrowSize);
+    &:before {
+      right: -$arrowSize * 2 - 2px;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+    }
+  }
+
+  &.bottom-right, &.top-right {
+    transform: translate($arrowSize);
+    &:before {
+      left: -$arrowSize * 2 - 2px;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+  }
+}
+.tutobot-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #333;
+  opacity: 0.7;
+  z-index: 999999999;
+}
+  .tutobot-active-element {
+    z-index: 9999999999;
+  }
