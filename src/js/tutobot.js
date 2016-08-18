@@ -140,6 +140,7 @@
             __step.push(step);
             this.steps.set(step.name, __step);
         }
+        return this;
       }
 
       this.getCurrent = function(){
