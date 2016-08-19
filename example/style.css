@@ -1,0 +1,31 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element {
+  width: 200px;
+  height: 400px;
+}
+
+.element.red {
+  background: red;
+}
+
+.element.yellow {
+  background: yellow;
+}
+
+.element.green {
+  background: green;
+}
+
+.element.blue {
+  background: blue;
+}

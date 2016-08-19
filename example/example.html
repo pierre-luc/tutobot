@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" ng-app="app">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>tutobot example</title>
+		<link rel="stylesheet" type="text/css" href="../dist/css/tutobot.css" />
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<div class="container">
+
+			<div class="element red" tutobot-step="first"></div>
+			<div class="element blue" tutobot-step="second"></div>
+			<div class="element green" tutobot-step="third"></div>
+			<div class="element yellow" tutobot-step="fourth"></div>
+
+		</div>
+
+    <!-- dependencies -->
+		<script src="../node_modules/angular/angular.min.js"></script>
+		<script src="../dist/js/tutobot.js"></script>
+
+    <!-- example -->
+		<script src="app.js"></script>
+	</body>
+</html>
