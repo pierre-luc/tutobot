@@ -1,8 +1,11 @@
 {
   "name": "tutobot",
   "description": "A bot to explain step by step an UI",
-  "version": "0.0.0",
-  "repository": "https://github.com/pierre-luc/AngularElasticSVGElements",
+  "version": "0.0.2",
+  "repository": "https://github.com/pierre-luc/tutobot",
+  "keywords": [
+    "bot", "automata", "tuto", "tutorial", "step by step"
+  ],
   "private": false,
   "license": "",
   "dependencies": {
